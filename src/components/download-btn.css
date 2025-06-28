@@ -1,0 +1,23 @@
+.download-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #00ffff;
+  color: #111;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.download-btn:hover,
+.download-btn:focus,
+.download-btn:active {
+  background-color: #00e0e0;
+  text-decoration: none;
+  outline: none;
+}

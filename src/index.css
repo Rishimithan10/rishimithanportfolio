@@ -1,0 +1,51 @@
+/* index.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+a:hover:after,
+a[style*="underline"]:after {
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+}
+
+a.download-btn {
+  text-decoration: none !important;
+}
+
+
+.download-btn::after {
+  display: none !important;
+  content: none !important;
+}
+

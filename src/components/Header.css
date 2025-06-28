@@ -1,0 +1,135 @@
+/* ========== BASE STYLES ========== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg, #fff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 101;
+}
+
+/* Prevent background scroll */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* ========== NAVIGATION LINKS ========== */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* Default colors */
+.nav-link.light {
+  color: #111;
+}
+
+.nav-link.dark {
+  color: #fff;
+}
+
+/* Active section styling */
+.nav-link.active {
+  font-weight: bold;
+  color: var(--active-color);
+}
+
+/* ========== TOGGLE BUTTON ========== */
+.theme-toggle-btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ========== HAMBURGER MENU ICON ========== */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 102;
+}
+
+/* ========== OVERLAY BEHIND DRAWER ========== */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+
+/* ========== RESPONSIVE (MOBILE) STYLES ========== */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+    background-color: inherit;
+    padding: 4rem 2rem 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    margin-top: 1rem;
+  }
+}
+/* Mobile view drawer background */
+.nav-links.light.open {
+  background-color: #fff; /* solid light background */
+}
+
+.nav-links.dark.open {
+  background-color: #111; /* solid dark background */
+}
