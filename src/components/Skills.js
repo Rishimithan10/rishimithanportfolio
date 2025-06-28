@@ -7,23 +7,13 @@ import {
   FaCss3Alt,
   FaJs,
   FaReact,
-  FaNode,
-  FaGitAlt,
   FaPython,
-  FaDatabase,
   FaCuttlefish, // used for C/C++
 } from "react-icons/fa";
 import {
-  SiTailwindcss,
-  SiMongodb,
-  SiExpress,
-  SiRedux,
-  SiGithub,
   SiMysql,
-  SiPowerbi,
 } from "react-icons/si";
 import { BiBrain } from "react-icons/bi"; // For AI
-import { RiApiLine } from "react-icons/ri"; // For API
 import { useTheme } from "./ThemeContext";
 import { FaCode } from "react-icons/fa"; // good fallback for API
 import { FaAws } from "react-icons/fa";
@@ -39,7 +29,7 @@ const skills = [
   { icon: <FaCss3Alt />, label: "CSS", color: "blue" },
   { icon: <FaReact />, label: "React", color: "cyan" },
   { icon: <SiMysql />, label: "MySQL", color: "#00758f" },
-  { icon: <FaCode />, label: "API", color: "#ff9800" },,
+  { icon: <FaCode />, label: "API", color: "#ff9800" },
   { icon: <FaJs />, label: "JavaScript", color: "yellow" },
   { icon: <FaAws />, label: "AWS", color: "#ff9900" },
 ];
