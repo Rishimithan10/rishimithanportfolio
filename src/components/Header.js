@@ -5,7 +5,6 @@ import "./Header.css";
 const Header = ({ activeSection }) => {
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-
   // Prevent background scroll when menu is open
   useEffect(() => {
     if (menuOpen) {

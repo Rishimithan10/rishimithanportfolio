@@ -52,7 +52,7 @@ const Projects = () => {
         padding: "2rem",
       }}
     >
-      <h2 style={{ fontSize: "2.5rem", textAlign: "center", marginBottom: "2rem", color: "#ff1493" }}>
+      <h2 style={{ fontSize: "2.5rem", textAlign: "center", marginBottom: "2rem", color: isDark ? "#00ffe0" : "#007a6f" }}>
         Projects
       </h2>
 

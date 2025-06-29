@@ -14,12 +14,13 @@ const sectionIds = ["home", "experience", "education", "projects", "skills", "co
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
-
+  
   useEffect(() => {
     const handleIntersect = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
+          
         }
       });
     };
@@ -29,13 +30,12 @@ function App() {
       rootMargin: "0px",
       threshold: 0.6,
     });
-
     // ✅ Observe all sections
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
-
+    
     // ✅ Clean up on unmount
     return () => {
       sectionIds.forEach((id) => {
