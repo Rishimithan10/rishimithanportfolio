@@ -3,6 +3,7 @@ import { FaDownload } from "react-icons/fa";
 import { useTheme } from "./ThemeContext";
 import "./download-btn.css"; // Make sure this file contains the updated CSS
 import "./Home.css";
+import ShinyText from './ShinyText';
 const Home = () => {
   const { theme } = useTheme();
   const textColor = theme === "dark" ? "#ffffff" : "#111111";
@@ -32,15 +33,9 @@ const Home = () => {
         Hi I'm
       </p>
 
-      <p
-        style={{
-          fontSize: "3rem",
-          fontWeight: "bold",
-          margin: "0.5rem 0 2rem",
-        }}
-      >
-        Rishimithan
-      </p>
+      
+  
+      <ShinyText text="RISHIMITHAN" disabled={false} speed={3} className='custom-class' />
 
       <p
         style={{

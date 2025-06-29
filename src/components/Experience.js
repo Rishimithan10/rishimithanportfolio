@@ -26,7 +26,7 @@ const Experience = () => {
     <section
       id="experience"
       style={{
-        minHeight: "100vh",
+        minHeight: "80vh",
         paddingTop: "80px",
         padding: "2rem 2rem 1rem", 
         backgroundColor: background,
