@@ -22,13 +22,12 @@ const Contact = () => {
 
         const templateParams = {
             from_email: email,
-            to_email: process.env.EMAIL,
+            to_email: process.env.REACT_APP_EMAIL,
             name,
             message,
         };
-
         emailjs
-            .send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, templateParams, process.env.ACCOUNT_ID)
+            .send(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID,templateParams,process.env.REACT_APP_ACCOUNT_ID )
             .then(
                 (response) => {
                     setStatus("Message sent successfully!");
