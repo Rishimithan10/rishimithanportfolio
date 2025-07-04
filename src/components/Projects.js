@@ -3,10 +3,11 @@ import { useTheme } from "./ThemeContext";
 
 const projectData = [
   {
-    title: "Portfolio Website",
-    description: "A responsive personal portfolio built with React and GSAP for smooth animations.",
-    tech: ["React", "GSAP", "CSS"],
-    //link: "https://github.com/yourusername/portfolio",
+    title: "File Processing Project using AWS",
+    description: `This AWS project leveraged API Gateway, S3 bucket, Lambda, DynamoDB, and SNS for automated file
+processing, storing the data in DynamoDB, and sending processing notifications via SNS for real-time file
+management`,
+tech: ["API Gateway","AWS S3","DynamoDB","SNS","Lambda"]
   },
   {
     title: "Antenna Impedance Matching Circuit using Shallow Learning Model",
@@ -26,6 +27,13 @@ segmented to train parallel ANN branches, ensuring accurate output non reliant o
     tech: ["Artificial Neural Network",'Adjoint Neural Network'],
     //link: "https://github.com/yourusername/weather-dashboard",
   },
+  {
+    title: " Chat Application using Socket Programming",
+    description: `This was a real-time, multi-client chat application utilizing Python sockets that implemented multi-
+threading to manage concurrent connections, user authentication, and message, ensuring efficient and reliable
+handling of client connections, facilitating seamless client-server communication`,
+tech: ["Python"],
+  }
 ];
 
 const Projects = () => {
