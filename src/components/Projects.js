@@ -3,6 +3,15 @@ import { useTheme } from "./ThemeContext";
 
 const projectData = [
   {
+    title: "Doc Chat bot using RAG",
+    description:`This project details a full-stack Retrieval-Augmented Generation (RAG) application that securely allows users to upload documents. 
+    These documents are processed—chunked and embedded using HuggingFace models—then stored in Pinecone for efficient semantic retrieval. 
+    User queries trigger the system to fetch relevant context and generate real-time, accurate responses via GPT-3.5. 
+    The application features a Streamlit frontend for an interactive user experience and integrates Firebase Authentication to ensure secure access. 
+    This setup demonstrates a comprehensive, production-ready RAG solution.`,
+    tech ["StreamlitUI","Hugging Face","Firebase","Pinecone","gpt-3.5"]
+  },
+  {
     title: "File Processing Project using AWS",
     description: `This AWS project leveraged API Gateway, S3 bucket, Lambda, DynamoDB, and SNS for automated file
 processing, storing the data in DynamoDB, and sending processing notifications via SNS for real-time file
