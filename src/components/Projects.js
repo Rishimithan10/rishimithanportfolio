@@ -9,7 +9,7 @@ const projectData = [
     User queries trigger the system to fetch relevant context and generate real-time, accurate responses via GPT-3.5. 
     The application features a Streamlit frontend for an interactive user experience and integrates Firebase Authentication to ensure secure access. 
     This setup demonstrates a comprehensive, production-ready RAG solution.`,
-    tech ["StreamlitUI","Hugging Face","Firebase","Pinecone","gpt-3.5"]
+    tech:["StreamlitUI","Hugging Face","Firebase","Pinecone","gpt-3.5"]
   },
   {
     title: "File Processing Project using AWS",
