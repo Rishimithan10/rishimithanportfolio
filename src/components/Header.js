@@ -21,7 +21,7 @@ const Header = ({ activeSection }) => {
     home: "#00ffff",
     experience: "#ffa500",
     education: "#00ff00",
-    projects: "#00FFFF",
+    projects: "#ffa500",
     skills: "#FFA500",
     contact: "#1e90ff",
   };

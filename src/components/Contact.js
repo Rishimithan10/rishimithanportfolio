@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { useTheme } from "./ThemeContext";
 import emailjs from "emailjs-com";
 
@@ -160,6 +160,19 @@ const Contact = () => {
   >
     <FaInstagram />
   </a>
+  <a
+  href="https://github.com/Rishimithan10"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    color: isDark ? "#00ffff" : "#111",
+    fontSize: "2rem",
+    transition: "color 0.3s ease",
+  }}
+>
+  <FaGithub />
+</a>
+
 </div>
 
         </section>

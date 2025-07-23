@@ -133,3 +133,8 @@
 .nav-links.dark.open {
   background-color: #111; /* solid dark background */
 }
+
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}

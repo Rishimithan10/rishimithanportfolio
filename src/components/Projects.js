@@ -16,7 +16,7 @@ const projectData = [
     description: `This AWS project leveraged API Gateway, S3 bucket, Lambda, DynamoDB, and SNS for automated file
 processing, storing the data in DynamoDB, and sending processing notifications via SNS for real-time file
 management`,
-tech: ["API Gateway","AWS S3","DynamoDB","SNS","Lambda"]
+    tech: ["API Gateway","AWS S3","DynamoDB","SNS","Lambda"]
   },
   {
     title: "Antenna Impedance Matching Circuit using Shallow Learning Model",
@@ -25,7 +25,6 @@ implementing a data-driven approach to dynamically adjust impedance, reducing po
 communication performance, optimizing transmission efficiency, ensuring fast/efficient adaptation with minimal
 computational overhead`,
     tech: ["Antenna Design", "Machine Learning"],
-    //link: "https://github.com/yourusername/task-manager",
   },
   {
     title: "Inverse Estimation of Antenna Array Directivity using Adjoint Neural Network",
@@ -34,14 +33,13 @@ estimation, mapping electromagnetic parameters to geometrical or physical parame
 uniqueness of the inverse problem, monotonicity was utilized by analyzing directional derivatives, while data was
 segmented to train parallel ANN branches, ensuring accurate output non reliant on the forward model`,
     tech: ["Artificial Neural Network",'Adjoint Neural Network'],
-    //link: "https://github.com/yourusername/weather-dashboard",
   },
   {
     title: " Chat Application using Socket Programming",
     description: `This was a real-time, multi-client chat application utilizing Python sockets that implemented multi-
 threading to manage concurrent connections, user authentication, and message, ensuring efficient and reliable
 handling of client connections, facilitating seamless client-server communication`,
-tech: ["Python"],
+    tech: ["Python"],
   }
 ];
 
@@ -50,12 +48,13 @@ const Projects = () => {
   const isDark = theme === "dark";
 
   const styles = {
-    background: isDark ? "#111" : "#f9f9f9",
+    background: isDark ? "#111" : "#f5f5f5",
     cardBackground: isDark ? "#1e1e1e" : "#fff",
     textColor: isDark ? "#fff" : "#111",
     borderColor: isDark ? "#333" : "#ddd",
     pillBackground: isDark ? "#222" : "#eee",
     pillText: isDark ? "#fff" : "#111",
+    titleColor: isDark ? "#00ffff" : "#2c3e50", // <-- Updated here
   };
 
   return (
@@ -86,7 +85,7 @@ const Projects = () => {
               boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
             }}
           >
-            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem", color: "#00ffff" }}>
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem", color: styles.titleColor }}>
               {project.title}
             </h3>
 
@@ -109,19 +108,6 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-
-            {/* <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#1e90ff",
-                textDecoration: "none",
-                fontWeight: "bold",
-              }}
-            >
-              View on GitHub →
-            </a> */}
           </div>
         ))}
       </div>

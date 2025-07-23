@@ -14,7 +14,7 @@ const educationHistory = [
     institution: "Kamala Niketan",
     period: "2017 – 2019",
     //details: "Studied Computer Science with Mathematics stream.",
-  },
+  }
 ];
 
 const Education = () => {

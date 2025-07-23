@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 
-// ✅ Moved outside the component to avoid unnecessary re-creation
+
 const sectionIds = ["home", "experience", "education", "projects", "skills", "contact"];
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
-          
         }
       });
     };
