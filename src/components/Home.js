@@ -51,7 +51,7 @@ const Home = () => {
         Focused on delivering scalable, efficient, and data-driven web applications.
       </p>
 <a
-  href="/Rishimithan_Resume.pdf"
+  href="/Rishimithan_Kannan_Resume.pdf"
   download
   className="download-btn"
 >
