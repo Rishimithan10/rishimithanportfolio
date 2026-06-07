@@ -4,6 +4,12 @@ import { useTheme } from "./ThemeContext"; // ✅ Import
 
 const experiences = [
   {
+    title: "AI Research Intern",
+    company: "BluBridge Technologies",
+    period: "Jan 2025 – May 2026",
+    description: "Worked as an AI Research Intern at BluBridge Technologies, gaining hands-on experience in GPU performance optimization and high-performance computing. Implemented custom CUDA kernels for core transformer components including SwiGLU, RMSNorm, and FlashAttention-2 on NVIDIA Blackwell hardware, achieving measurable throughput improvements over PyTorch baselines. Developed and optimized MatMul/GEMM kernels using tiling, vectorized memory access, and register caching techniques. Profiled compute utilization, memory bandwidth, and warp efficiency using NVIDIA Nsight Compute and Nsight Systems, translating insights into iterative kernel optimizations. Focused on learning low-level GPU programming and building a strong foundation in ML systems performance engineering..",
+  },
+  {
     title: "Graduate Engineering Trainee",
     company: "Psiog Digital (P) Ltd",
     period: "Aug 2024 – Feb 2025",
